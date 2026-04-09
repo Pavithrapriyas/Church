@@ -1,0 +1,80 @@
+
+{{ partial "header.html" . }}
+
+<br><br>
+
+<!-- HERO -->
+<div class="container8">
+  <img src="{{ .Params.hero_image }}" alt="church">
+
+  <div class="text-overlay1">
+      <h1>{{ .Params.hero_title }}</h1><br>
+      <h3>{{ .Params.hero_subtitle }}</h3>
+      <h2>{{ .Params.hero_church }}</h2>
+  </div>
+</div>
+
+<br><br><br><br>
+
+<h2>{{ .Params.history_title }}</h2>
+
+<br><br><br>
+
+<!-- HISTORY -->
+<div class="container9">
+  <section class="text-section4">
+     <h3>{{ .Params.history_text }}</h3><br>
+     <div class="timeline">
+  <h4>
+    {{ range .Params.timeline }}
+      <span>{{ .year }}</span>
+    {{ end }}
+  </h4>
+
+  <h5>
+    {{ range .Params.timeline }}
+      <span>{{ .text }}</span>
+    {{ end }}
+  </h5>
+</div>
+  </section>
+
+  <section class="image-section4">
+    <img src="{{ .Params.history_image }}" alt="church">
+  </section>
+</div>
+
+<br><br><br><br>
+
+<!-- VISION + MISSION -->
+<div class="container10">
+  <section class="box1">
+    <h3>{{ .Params.vision_title }}</h3>
+    <h5>{{ .Params.vision_text }}</h5>
+  </section>
+
+  <section class="box2">
+    <h3>{{ .Params.mission_title }}</h3>
+    <h5>{{ .Params.mission_text }}</h5>
+  </section>
+</div>
+
+<br><br>
+
+<!-- PASTOR -->
+<div class="container11">
+  <section class="text-section5">
+    <h4>Our Pastor</h4>
+    <h2>{{ .Params.pastor_name }}</h2>
+    <h3>{{ .Params.pastor_text }}</h3>
+  </section>
+
+  <section class="image-section5">
+    <img src="{{ .Params.pastor_image }}" alt="church">
+  </section>
+</div>
+
+<br><br><br><br>
+
+{{ partial "footer.html" . }}
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Commission on Church</title>
+    <link>http://localhost:1313/commission/</link>
+    <description>Recent content in Commission on Church</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/commission/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Election Commission</title>
+      <link>http://localhost:1313/commission/election-commission/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/commission/election-commission/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inspection Commission</title>
+      <link>http://localhost:1313/commission/inspection-commission/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/commission/inspection-commission/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Public Relation Commission</title>
+      <link>http://localhost:1313/commission/public-relation-commission/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/commission/public-relation-commission/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

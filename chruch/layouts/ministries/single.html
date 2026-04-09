@@ -1,0 +1,76 @@
+
+
+{{ partial "header.html" . }}
+<br><br>
+
+<!-- HERO -->
+<div class="{{ .Params.hero.container }}">
+  <img src="{{ .Params.hero.image }}" alt="hero">
+  
+  <div class="{{ .Params.hero.overlay }}">
+      <h1>{{ .Title }}</h1>
+      <h2>{{ .Params.hero.description }}</h2>
+  </div>
+</div>
+
+<br><br><br><br>
+
+<h2>Day & Time</h2>
+
+<br><br><br><br>
+
+<div class="{{ .Params.day_time.container }}">
+  <section class="{{ .Params.day_time.text_class }}">
+    <h4>
+      {{ .Params.day_time.day }}
+      <br><br>
+      ⏰ {{ .Params.day_time.time }}
+      <br><br>
+      📍 {{ .Params.day_time.location }}
+    </h4>
+  </section>
+
+  <section class="{{ .Params.day_time.image_class }}">
+    <img src="{{ .Params.day_time.image }}" alt="day">
+  </section>
+</div>
+
+<br><br><br><br>
+
+<h2>What We Do</h2>
+
+<br><br><br><br>
+
+<div class="{{ .Params.activities_section.container }}">
+  <section class="{{ .Params.activities_section.image_class }}">
+    <img src="{{ .Params.activities_section.image }}" alt="activities">
+  </section>
+
+  <section class="{{ .Params.activities_section.text_class }}">
+    <h4>
+      {{ range .Params.activities_section.items }}
+        • {{ . }} <br><br>
+      {{ end }}
+    </h4>
+  </section>
+</div>
+
+<br><br><br><br>
+
+<!-- LEADER -->
+<div class="{{ .Params.leader.container }}">
+  <section class="{{ .Params.leader.text_class }}">
+    <h4>{{ .Params.leader.title }}</h4>
+    <h2>{{ .Params.leader.name }}</h2>
+    <h3>{{ .Params.leader.description }}</h3>
+  </section>
+
+  <section class="{{ .Params.leader.image_class }}">
+    <img src="{{ .Params.leader.image }}" alt="leader">
+  </section>
+</div>
+
+<br><br><br><br>
+
+
+{{ partial "footer.html" . }}

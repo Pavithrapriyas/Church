@@ -1,0 +1,36 @@
+
+
+{{ partial "header.html" . }}
+
+<br><br>
+
+<!-- HERO -->
+<div class="container73">
+  <img src="{{ .Params.hero_image }}" alt="church">
+  
+  <div class="text-overlay73">
+      <h1>{{ .Params.hero_title }}</h1>
+      <h3>{{ .Params.hero_text }}</h3>
+  </div>
+</div>
+
+<br><br><br><br>
+
+<h2>Our Commissions</h2>
+
+<br><br><br>
+
+<!-- COMMISSION CARDS -->
+<div class="container74">
+  {{ range $index, $item := .Params.commissions }}
+  <div class="card{{ add 31 $index }}">
+    <img src="{{ $item.image }}" alt="church">
+    <h5><a href="{{ $item.link }}">{{ $item.name }}</a></h5>
+  </div>
+  {{ end }}
+</div>
+
+<br><br><br><br><br><br>
+
+{{ partial "footer.html" . }}
+

@@ -1,0 +1,48 @@
+
+
+{{ partial "header.html" . }}
+
+<br> <br>
+
+
+<!-- HERO -->
+<div class="container49">
+  <img src="{{ .Params.hero_image }}" alt="church">
+  
+  <div class="text-overlay49">
+      <h1>{{ .Params.hero_title }}</h1>
+      <h3>{{ .Params.hero_text }}</h3>
+  </div>
+</div>
+
+<br><br><br><br>
+
+<h2>Our Zone</h2>
+
+<br><br><br>
+
+<!-- ROW 1 -->
+<div class="container50">
+  {{ range $index, $zone := .Params.zones_row1 }}
+  <div class="card{{ add 10 $index }}">
+    <img src="{{ $zone.image }}" alt="church">
+    <h5><a href="{{ $zone.link }}">{{ $zone.name }}</a></h5>
+  </div>
+  {{ end }}
+</div>
+
+<br><br><br><br><br><br>
+
+<!-- ROW 2 -->
+<div class="container51">
+  {{ range $index, $zone := .Params.zones_row2 }}
+  <div class="card{{ add 13 $index }}">
+    <img src="{{ $zone.image }}" alt="church">
+    <h5><a href="{{ $zone.link }}">{{ $zone.name }}</a></h5>
+  </div>
+  {{ end }}
+</div>
+
+<br><br><br><br><br><br>
+
+{{ partial "footer.html" . }}

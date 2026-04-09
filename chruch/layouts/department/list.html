@@ -1,0 +1,59 @@
+
+
+{{ partial "header.html" . }}
+
+<br><br>
+
+<!-- HERO -->
+<div class="container58">
+  <img src="{{ .Params.hero_image }}" alt="church">
+  
+  <div class="text-overlay58">
+      <h1>{{ .Params.hero_title }}</h1>
+      <h3>{{ .Params.hero_text }}</h3>
+  </div>
+</div>
+
+<br><br><br><br><br>
+
+<h2>Our Departments</h2>
+
+<br><br><br><br><br>
+
+<!-- ROW 1 -->
+<div class="container59">
+  {{ range $index, $dept := .Params.departments_row1 }}
+  <div class="card{{ add 19 $index }}">
+    <img src="{{ $dept.image }}" alt="church">
+    <h5><a href="{{ $dept.link }}">{{ $dept.name }}</a></h5>
+  </div>
+  {{ end }}
+</div>
+
+<br><br><br><br><br><br><br><br>
+
+<!-- ROW 2 -->
+<div class="container60">
+  {{ range $index, $dept := .Params.departments_row2 }}
+  <div class="card{{ add 22 $index }}">
+    <img src="{{ $dept.image }}" alt="church">
+    <h5><a href="{{ $dept.link }}">{{ $dept.name }}</a></h5>
+  </div>
+  {{ end }}
+</div>
+
+<br><br><br><br><br><br><br><br>
+
+<!-- ROW 3 -->
+<div class="container61">
+  {{ range $index, $dept := .Params.departments_row3 }}
+  <div class="card{{ add 25 $index }}">
+    <img src="{{ $dept.image }}" alt="church">
+    <h5><a href="{{ $dept.link }}">{{ $dept.name }}</a></h5>
+  </div>
+  {{ end }}
+</div>
+
+<br><br><br><br><br><br><br><br>
+
+{{ partial "footer.html" . }}

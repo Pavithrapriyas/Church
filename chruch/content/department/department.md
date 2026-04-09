@@ -1,0 +1,4 @@
+---
+title: "Department"
+layout: "list"
+---

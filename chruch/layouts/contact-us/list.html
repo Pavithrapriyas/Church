@@ -1,0 +1,80 @@
+
+
+{{ partial "header.html" . }}
+
+<br><br>
+
+<!-- HERO -->
+<div class="container46">
+   <img src="{{ .Params.hero_image }}" alt="church">
+  
+  <div class="text-overlay31">
+      <h1>{{ .Params.hero_title }}</h1>
+      <h2>{{ .Params.hero_text }}</h2>
+  </div>
+</div>
+
+<br><br><br><br>
+
+<!-- FIND CHURCH -->
+<div class="container47">
+  <h2>{{ .Params.find_title }}</h2>
+  <h3>{{ .Params.find_text }}</h3>
+  
+ <div class="Church">
+
+  <input type="checkbox" id="Church-toggle">
+
+  <label for="Church-toggle" class="dropbtn01">
+    <span>Select Church Location ▾</span>
+  </label>
+
+  <ul class="Church-dropdown">
+    {{ range .Params.locations }}
+      <li><a href="{{ .link }}">{{ .name }}</a></li>
+    {{ end }}
+  </ul>
+
+</div>
+</div>
+
+<br><br><br><br><br><br>
+
+<!-- CONTACT FORM -->
+<div class="container48">
+  <section class="text-section48">
+    <h4>{{ .Params.form_title }}</h4>
+
+    <input type="text" class="input5" placeholder="Enter your name">
+    <input type="text" class="input5" placeholder="Enter your Email">
+    <input type="text" class="input5" placeholder="Enter your Message">
+
+  
+ <div class="Church1">
+
+  <input type="checkbox" id="Church1-toggle">
+
+  <label for="Church1-toggle" class="dropbtn02">
+    <span>Select Church Location ▾</span>
+  </label>
+
+  <ul class="Church1-dropdown">
+    {{ range .Params.locations1 }}
+      <li><a href="{{ .link }}">{{ .name }}</a></li>
+    {{ end }}
+  </ul>
+
+
+    <br><br>
+
+    <button class="btn5">Submit</button>
+  </section>
+
+  <section class="image-section48">
+    <img src="{{ .Params.side_image }}" alt="church">
+  </section>
+</div>
+
+<br><br><br><br><br><br><br><br>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Church</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Church</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adult Ministry</title>
+      <link>http://localhost:1313/ministries/adult-ministry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ministries/adult-ministry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bhoothapandi Zone</title>
+      <link>http://localhost:1313/zone/bhoothapandi-zone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zone/bhoothapandi-zone/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bible Study Department</title>
+      <link>http://localhost:1313/department/bible-study-department/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/department/bible-study-department/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Children department</title>
+      <link>http://localhost:1313/department/children-department/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/department/children-department/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Children Ministry</title>
+      <link>http://localhost:1313/ministries/children-ministry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ministries/children-ministry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Colachel Zone</title>
+      <link>http://localhost:1313/zone/colachel-zone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zone/colachel-zone/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Department</title>
+      <link>http://localhost:1313/department/department/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/department/department/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Elder Department</title>
+      <link>http://localhost:1313/department/elder-department/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/department/elder-department/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Elder Ministry</title>
+      <link>http://localhost:1313/ministries/elder-ministry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ministries/elder-ministry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Election Commission</title>
+      <link>http://localhost:1313/commission/election-commission/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/commission/election-commission/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Family Department</title>
+      <link>http://localhost:1313/department/family-department/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/department/family-department/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Family Ministries</title>
+      <link>http://localhost:1313/ministries/family-ministry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ministries/family-ministry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inspection Commission</title>
+      <link>http://localhost:1313/commission/inspection-commission/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/commission/inspection-commission/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kuzhithurai Zone</title>
+      <link>http://localhost:1313/zone/kuzhithurai-zone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zone/kuzhithurai-zone/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Marthandam Zone</title>
+      <link>http://localhost:1313/zone/marthandam-zone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zone/marthandam-zone/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Men department</title>
+      <link>http://localhost:1313/department/men-department/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/department/men-department/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nagercoil Zone</title>
+      <link>http://localhost:1313/zone/nagercoil-zone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zone/nagercoil-zone/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prayer Department</title>
+      <link>http://localhost:1313/department/prayer-department/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/department/prayer-department/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Public Relation Commission</title>
+      <link>http://localhost:1313/commission/public-relation-commission/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/commission/public-relation-commission/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Thuckalay Zone</title>
+      <link>http://localhost:1313/zone/thuckalay-zone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zone/thuckalay-zone/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Women Department</title>
+      <link>http://localhost:1313/department/women-department/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/department/women-department/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Worship Department</title>
+      <link>http://localhost:1313/department/worship-department/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/department/worship-department/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Worship Ministry</title>
+      <link>http://localhost:1313/ministries/worship-ministry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ministries/worship-ministry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Youth Department</title>
+      <link>http://localhost:1313/department/youth-department/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/department/youth-department/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Youth Ministry</title>
+      <link>http://localhost:1313/ministries/youth-ministry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ministries/youth-ministry/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

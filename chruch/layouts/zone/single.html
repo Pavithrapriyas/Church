@@ -1,0 +1,50 @@
+
+
+
+{{ partial "header.html" . }}
+<br><br>
+
+
+<div class="{{ .Params.container }}">
+  <img src="{{ .Params.image }}" alt="church">
+  
+  <div class="{{ .Params.overlay }}">
+      <h1>{{ .Title }}</h1>
+  </div>
+</div>
+
+<br><br><br>
+
+
+<div class="slider-container">
+
+  <button class="arrowleft" onclick="moveSlide(-1)">&#10094;</button>
+
+  <div class="slider">
+    <div class="slides">
+
+      {{ range .Params.zone_members }}
+      <div class="person">
+        <img src="{{ .image }}" alt="church">
+        <br><br>
+        <h4>{{ .name }}</h4>
+        <p>{{ .role }}</p>
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+
+  <button class="arrowright" onclick="moveSlide(1)">&#10095;</button>
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<script src="/js/slider.js"></script>
+
+{{ partial "footer.html" . }}

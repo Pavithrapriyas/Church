@@ -1,0 +1,51 @@
+
+
+{{ partial "header.html" . }}
+
+<br><br>
+
+<!-- HERO -->
+<div class="container86">
+  <img src="{{ .Params.hero_image }}" alt="church">
+
+  <div class="text-overlay86">
+    <h1>{{ .Params.hero_title }}</h1>
+    <h3>{{ .Params.hero_text }}</h3>
+  </div>
+</div>
+
+<br><br><br>
+
+<h2>Council Leaders</h2>
+
+<br><br>
+
+<!-- MAIN LEADER -->
+<div class="container87">
+  <section class="image-section87">
+    <img src="{{ .Params.leader.image }}" alt="church">
+  </section>
+
+  <section class="text-section87">
+    <h2>{{ .Params.leader.name }}</h2>
+    <h3>{{ .Params.leader.role }}</h3>
+    <h4>{{ .Params.leader.description }}</h4>
+  </section>
+</div>
+
+<br><br><br><br>
+
+<!-- MEMBERS -->
+<div class="container91">
+  {{ range $index, $member := .Params.members }}
+  <div class="card{{ add 40 $index }}">
+    <img src="{{ $member.image }}" alt="church">
+    <h4>{{ $member.name }}</h4>
+    <p>{{ $member.role }}</p>
+  </div>
+  {{ end }}
+</div>
+
+<br><br><br><br>
+
+{{ partial "footer.html" . }}

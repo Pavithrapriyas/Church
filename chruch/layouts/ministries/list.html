@@ -1,0 +1,48 @@
+
+{{ partial "header.html" . }}
+
+<br><br>
+
+<!-- Hero Section -->
+<div class="container12">
+  <img src="{{ .Params.image }}" alt="church">
+
+  <div class="text-overlay2">
+      <h1>{{ .Title }}</h1>
+      <br>
+      <h3>{{ .Params.subtitle }}</h3>
+  </div>
+</div>
+
+<br><br><br><br>
+
+<h2>Our Ministries</h2>
+
+<br><br><br>
+
+<!-- Row 1 -->
+<div class="container13">
+  {{ range .Params.row1 }}
+    <div class="card">
+      <img src="{{ .image }}" alt="">
+      <h5><a href="{{ .link }}">{{ .name }}</a></h5>
+    </div>
+  {{ end }}
+</div>
+
+<br><br><br><br>
+
+<!-- Row 2 -->
+<div class="container14">
+  {{ range .Params.row2 }}
+    <div class="card">
+      <img src="{{ .image }}" alt="">
+      <h5><a href="{{ .link }}">{{ .name }}</a></h5>
+    </div>
+  {{ end }}
+</div>
+
+<br><br><br><br><br><br>
+
+{{ partial "footer.html" . }}
+

@@ -1,0 +1,53 @@
+
+
+{{ partial "header.html" . }}
+<br>
+<br>
+
+<div class="{{ .Params.hero_container }}">
+  <img src="{{ .Params.hero_image }}" alt="church">
+  
+  <div class="{{ .Params.hero_overlay }}">
+      <h1>{{ .Params.hero_heading }}</h1>
+      <h3>{{ .Params.hero_subheading }}</h3>
+  </div>
+</div>
+
+<br><br><br>
+
+<div class="{{ .Params.commission_container }}">
+
+  <section class="{{ .Params.commission_text_class }}">
+    <h2>{{ .Params.commission_title }}</h2>
+    <h4>{{ .Params.commission_text }}</h4>
+  </section>
+
+  <section class="{{ .Params.commission_image_class }}">
+    <img src="{{ .Params.commission_image }}" alt="church">
+  </section>
+
+</div>
+
+
+<h2>Commission Members</h2>
+
+<br><br>
+
+<div class="container90">
+  {{ $cards := slice "card37" "card38" "card39" }}
+
+  {{ range $index, $member := .Params.commission_members}}
+    <div class="{{ index $cards (mod $index (len $cards)) }}">
+      <img src="{{ $member.image }}" alt="church">
+      <h4>{{ $member.name }}</h4>
+      <p>{{ $member.role }}</p>
+    </div>
+  {{ end }}
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+{{ partial "footer.html" . }}

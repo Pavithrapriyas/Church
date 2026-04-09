@@ -1,0 +1,107 @@
+
+
+{{ partial "header.html" . }}
+<br>
+<br>
+<!-- HERO -->
+<img src="{{ .Params.hero_image }}" class="container2" alt="church">
+<div class="text-overlay">
+  <h1>{{ .Params.hero_title }}</h1>
+  <br>
+  <h3>{{ .Params.hero_text }}</h3>
+</div>
+
+<br><br><br><br>
+
+<!-- ABOUT -->
+<h2>{{ .Params.about_title }}</h2>
+<br><br><br>
+
+<div class="container3">
+  <section class="image-section">
+    <img src="{{ .Params.about_image }}" alt="church">
+  </section>
+  <section class="text-section">
+    <h4>{{ .Params.about_text }}</h4>
+    <a href="/about-us" class="btn">View More</a>
+  </section>
+</div>
+
+<br><br><br><br>
+
+<!-- MINISTRIES -->
+<h2>Ministries</h2>
+<br><br><br>
+
+<div class="container4">
+  {{ range .Params.ministries }}
+  <div class="card">
+    <img src="{{ .image }}" alt="church">
+    <h5>{{ .name }}</h5>
+  </div>
+  {{ end }}
+</div>
+
+<div class="button-wrapper">
+  <a href="/ministries" class="btn">View More</a>
+</div>
+
+<br><br><br><br><br>
+
+<!-- EVENT -->
+<div class="container5">
+  <section class="image-section1">
+    <img src="{{ .Params.event_image }}" alt="church">
+  </section>
+  <section class="text-section1">
+    <h5>{{ .Params.event_date }}</h5>
+    <h2>{{ .Params.event_title }}</h2>
+    <h5>{{ .Params.event_text }}</h5>
+    <a href="/events" class="btn2">View All Events</a>
+  </section>
+</div>
+
+<br><br><br><br>
+
+<!-- DEPARTMENT -->
+<h2>Department</h2>
+
+<br><br>
+
+<div class="container6">
+  <section class="text-section2">
+    <h5>{{ .Params.department_title }}</h5>
+    <h2>{{ .Params.department_heading }}</h2>
+    <h6>{{ .Params.department_text }}</h6>
+  </section>
+  <section class="image-section2">
+    <img src="{{ .Params.department_image }}" alt="church">
+  </section>
+</div>
+
+<br><br><br><br>
+
+<!-- HOURS -->
+<div class="container7">
+  <section class="image-section3">
+    <img src="{{ .Params.hours_image }}" alt="church">
+  </section>
+  <section class="text-section3">
+    <h3>Church Open Hours</h3>
+    <h5>
+      {{ range .Params.hours }}
+      <div class="time">
+        {{ .day }} &nbsp;&nbsp;&nbsp;&nbsp; {{ .time }}
+      </div>
+      {{ end }}
+    </h5>
+  </section>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+{{ partial "footer.html" . }}
+

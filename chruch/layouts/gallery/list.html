@@ -1,0 +1,50 @@
+
+    {{ partial "header.html" . }}
+
+<br><br>
+
+<!-- HERO -->
+<div class="container42">
+   <img src="{{ .Params.hero_image }}" alt="church">
+  
+  <div class="text-overlay30">
+      <h1>{{ .Params.hero_title }}</h1>
+      <h2>{{ .Params.hero_text }}</h2>
+  </div>
+</div>
+
+<br><br><br><br>
+
+<h2>{{ .Params.section_title }}</h2>
+
+<br><br><br><br>
+
+<!-- ROW 1 -->
+<div class="container43">
+  {{ range .Params.gallery1 }}
+   <img src="{{ . | relURL }}" alt="church">
+  {{ end }}
+</div>
+
+<br><br><br><br><br><br><br><br>
+
+<!-- ROW 2 -->
+<div class="container44">
+  {{ range .Params.gallery2 }}
+   <img src="{{ . | relURL }}" alt="church">
+  {{ end }}
+</div>
+
+<br><br><br><br><br><br><br><br>
+
+<!-- ROW 3 -->
+<div class="container45">
+  {{ range .Params.gallery3 }}
+  <img src="{{ . | relURL }}" alt="church">
+  {{ end }}
+</div>
+
+<br><br><br><br><br><br>
+
+{{ partial "footer.html" . }}
+
