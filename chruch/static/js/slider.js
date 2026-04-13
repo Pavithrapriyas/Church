@@ -1,19 +1,29 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
-    let currentIndex = 0;
-    const slideWidth = 480;
-    const imagesPerSlide = 3;
-    const slides = document.querySelector(".slides");
-    const totalImages = document.querySelectorAll(".slides img").length;
+  let currentIndex = 0;
 
-    function moveSlide(direction) {
-      currentIndex += direction;
+  const slides = document.querySelector('.slides');
+  const persons = document.querySelectorAll('.person');
+  const slider = document.querySelector('.slider');
 
-      const maxIndex = Math.floor(totalImages / imagesPerSlide) - 1;
+  if (!slides || persons.length === 0 || !slider) {
+    console.log("Slider elements not found");
+    return;
+  }
 
-      if (currentIndex < 0) currentIndex = 0;
-      if (currentIndex > maxIndex) currentIndex = maxIndex;
+  function autoSlide() {
+    const slideWidth = slider.clientWidth;
 
-      slides.style.transform =
-        `translateX(-${currentIndex * slideWidth * imagesPerSlide}px)`;
+    currentIndex++;
+
+    if (currentIndex >= persons.length) {
+      currentIndex = 0;
     }
-  
+
+    slides.style.transform = "translateX(-" + (currentIndex * slideWidth) + "px)";
+  }
+
+  setInterval(autoSlide, 2000); // 2 seconds
+});
+</script>

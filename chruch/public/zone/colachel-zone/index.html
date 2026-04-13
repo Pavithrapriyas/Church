@@ -1,12 +1,10 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
  <meta charset="UTF-8">
  <title>Colachel Zone</title>
  <link rel="stylesheet" href="/css/style.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <nav class="navbar">
@@ -16,6 +14,9 @@
         </a>
     </div>
     
+      <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">☰</label>
+  
   
          <ul class="menu">
             <li class="Zone">
@@ -66,6 +67,28 @@
                         </ul>
              </li>
                         <li><a href="/council/" class="Councils">Council</a></li>
+                          <li><a href="/about-us/" class="aboutus">About-Us</a></li>
+
+      <li class="Ministries">
+          <input type="checkbox" id="Zone-toggle3">
+          <label for="Zone-toggle3" class="dropbtn1">
+            <span class="ministry">Ministries&nbsp;&nbsp; ▾</span>
+          </label>
+
+         <ul class="Ministries-dropdown">
+              <li><a href="/ministries/" class="ministries">Ministries</a></li>
+            <li><a href="/ministries/children-ministry/">Children Ministry</a></li>
+            <li><a href="/ministries/family-ministry/">Family Ministry</a></li>
+            <li><a href="/ministries/worship-ministry/">Worship Ministry</a></li>
+            <li><a href="/ministries/adult-ministry/">Adult Ministry</a></li>
+            <li><a href="/ministries/elder-ministry/">Elder Ministry</a></li>
+            <li><a href="/ministries/youth-ministry/">Youth Ministry</a></li>
+          </ul>
+        </li>
+        <li><a href="/events/" class="events">Events</a></li>
+        <li><a href="/gallery/" class="gallery">Gallery</a></li>
+        <li><a href="/contact-us/" class="Contact">Contact Us</a></li>
+    </ul>
 </nav>
 
 
@@ -104,80 +127,104 @@
 
 <div class="container53">
   <img src="/images/image74.jpg" alt="church">
-  
+
   <div class="text-overlay53">
-      <h1>Colachel Zone</h1>
+    <h1>Colachel Zone</h1>
   </div>
 </div>
 
 <br><br><br>
 
-
 <div class="slider-container">
 
-  <button class="arrowleft" onclick="moveSlide(-1)">&#10094;</button>
+  <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
 
   <div class="slider">
     <div class="slides">
 
-      
       <div class="person">
-        <img src="/images/image68.jpg" alt="church">
-        <br><br>
-        <h4>Pr. Daniel Joseph</h4>
-        <p>Zone Pastor</p>
-      </div>
-      
-      <div class="person">
-        <img src="/images/image69.jpg" alt="church">
-        <br><br>
-        <h4>Sis. Mary Stephen</h4>
-        <p>Women’s Leader</p>
-      </div>
-      
-      <div class="person">
-        <img src="/images/image70.jpg" alt="church">
-        <br><br>
+        <img src="/images/image70.jpg">
         <h4>Bro. Samuel Raj</h4>
         <p>Youth Coordinator</p>
       </div>
-      
+
       <div class="person">
-        <img src="/images/image71.jpg" alt="church">
-        <br><br>
+        <img src="/images/image69.jpg">
+        <h4>Sis. Mary Stephen</h4>
+        <p>Women’s Leader</p>
+      </div>
+
+      <div class="person">
+        <img src="/images/image71.jpg">
         <h4>Bro. John Mathew</h4>
         <p>Outreach Coordinator</p>
       </div>
-      
+
       <div class="person">
-        <img src="/images/image72.jpg" alt="church">
-        <br><br>
+        <img src="/images/image68.jpg">
+        <h4>Pr. Daniel Joseph</h4>
+        <p>Zone Pastor</p>
+      </div>
+
+      <div class="person">
+        <img src="/images/image72.jpg">
         <h4>Sis. Grace Rebecca</h4>
         <p>Fellowship Secretary</p>
       </div>
-      
+
       <div class="person">
-        <img src="/images/image73.jpg" alt="church">
-        <br><br>
+        <img src="/images/image73.jpg">
         <h4>Bro. David Emmanuel</h4>
         <p>Worship Leader</p>
       </div>
-      
 
     </div>
   </div>
 
-  <button class="arrowright" onclick="moveSlide(1)">&#10095;</button>
+  <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
 
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
+<script>
+let currentIndex = 0;
 
-<script src="/js/slider.js"></script>
+function getItemsPerSlide() {
+  const width = window.innerWidth;
+
+  if (width > 1024) return 3;
+  if (width > 424) return 2;
+  return 1;
+}
+
+function moveSlide(direction) {
+  const slides = document.querySelector('.slides');
+  const persons = document.querySelectorAll('.person');
+  const slider = document.querySelector('.slider');
+
+  const itemsPerSlide = getItemsPerSlide();
+
+  
+  const totalSlides = Math.ceil(persons.length / itemsPerSlide);
+
+  const slideWidth = slider.clientWidth;
+
+  currentIndex += direction;
+
+  if (currentIndex < 0) {
+    currentIndex = totalSlides - 1;
+  } else if (currentIndex >= totalSlides) {
+    currentIndex = 0;
+  }
+
+  slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
+</script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 <footer class="footer">

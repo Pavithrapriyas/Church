@@ -4,28 +4,29 @@ image: "/images/image78.jpg"
 container: "container57"
 overlay: "text-overlay57"
 layout: "single"
-zone_members:
-  - name: "Pr. Daniel Joseph"
-    role: "Zone Pastor"
-    image: "/images/image68.jpg"
+ 
 
-  - name: "Sis. Mary Stephen"
-    role: "Women’s Leader"
-    image: "/images/image69.jpg"
+name1: "Bro. Samuel Raj"
+role1: "Youth Coordinator"
+image1: "/images/image70.jpg"
 
-  - name: "Bro. Samuel Raj"
-    role: "Youth Coordinator"
-    image: "/images/image70.jpg"
+name2: "Sis. Mary Stephen"
+role2: "Women’s Leader"
+image2: "/images/image69.jpg"
 
-  - name: "Bro. John Mathew"
-    role: "Outreach Coordinator"
-    image: "/images/image71.jpg"
+name3: "Bro. John Mathew"
+role3: "Outreach Coordinator"
+image3: "/images/image71.jpg"
 
-  - name: "Sis. Grace Rebecca"
-    role: "Fellowship Secretary"
-    image: "/images/image72.jpg"
+name4: "Pr. Daniel Joseph"
+role4: "Zone Pastor"
+image4: "/images/image68.jpg"
 
-  - name: "Bro. David Emmanuel"
-    role: "Worship Leader"
-    image: "/images/image73.jpg"
+name5: "Sis. Grace Rebecca"
+role5: "Fellowship Secretary"
+image5: "/images/image72.jpg"
+
+name6: "Bro. David Emmanuel"
+role6: "Worship Leader"
+image6: "/images/image73.jpg"
 ---

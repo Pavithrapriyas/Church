@@ -1,4 +1,3 @@
-
 .navbar {
   align-items: center;
   display: flex;
@@ -1551,153 +1550,6 @@ h1 {
   font-weight: bold;
 }
 
-.slider-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  margin-left: 60px;
-  margin-left: 60px;
-}
-
-.slider {
-  width: 1400px;
-  /* 3 images × 300px */
-  overflow: hidden;
-}
-
-.slides {
-  display: flex;
-  gap: 180px;
-  transition: transform 0.5s ease-in-out;
-}
-
-.person {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* 🔥 Centers image + text */
-  text-align: center;
-}
-
-.person img {
-  width: 300px;
-  object-fit: cover;
-  flex-shrink: 0;
-  /* 🔥 prevents shrinking */
-  display: block;
-}
-
-.arrowleft {
-  font-size: 30px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.arrowright {
-  font-size: 30px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  margin-right: 60px;
-}
-
-.person h4,
-.person p {
-  color: black;
-  line-height: 1.2;
-}
-
-.person h4 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 15px 0 5px;
-}
-
-.person p {
-  font-size: 24px;
-  font-weight: 400;
-  margin: 0;
-}
-
-.person1 h4,
-.person1 p {
-  color: black;
-  line-height: 1.2;
-}
-
-.person1 h4 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 15px 0 5px;
-  margin-left: 60px;
-}
-
-
-.person1 p {
-  font-size: 24px;
-  font-weight: 400;
-  margin: 0;
-  margin-left: 60px;
-}
-
-.script1 {
-  display: none;
-}
-
-.slider-container1 {
-  display: none;
-}
-
-
-.script2 {
-  display: none;
-}
-
-.slider-container2 {
-  display: none;
-}
-
-
-
-
-
-
-.container53 {
-  width: 100%;
-  text-align: center;
-  position: relative;
-}
-
-.container53 img {
-  width: 1400px;
-  display: block;
-  margin: 0 auto;
-}
-
-.text-overlay53 {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: rgb(0, 0, 0);
-  text-align: center;
-}
-
-h1 {
-  font-size: 40px;
-  font-weight: bold;
-}
-
-
-
-
-
-
-
-
-
 
 .container54 {
   width: 100%;
@@ -2488,13 +2340,14 @@ h2 {
 .text-section4 h4 {
   font-size: 20px;
   font-weight: 600;
-  
+
 }
 
 .timeline h4,
 .timeline h5 {
   display: flex;
-  justify-content: space-between; /* MAIN spacing */
+  justify-content: space-between;
+  /* MAIN spacing */
   text-align: left;
 }
 
@@ -4113,10 +3966,315 @@ section.image-section5 {
 
 
 
+#menu-toggle {
+  display: none;
+}
+
+
+.hamburger {
+  display: none;
+}
+
+.menu2 {
+  display: none;
+}
+
+.aboutus,
+.ministry,
+.events,
+.gallery,
+.Contact {
+  display: none;
+}
+
+.script {
+  display: block;
+}
+
+.script1,
+.script2 {
+  display: none;
+}
 
 
 
+.slider-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
 
+.slider {
+  width: 80%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.person {
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: center;
+}
+
+.person img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.person h4,
+.person p {
+  color: black;
+  line-height: 1.6;
+}
+
+.person h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 15px 0 5px;
+  padding-left: 70px;
+}
+
+.person p {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* -------- RESPONSIVE -------- */
+
+/* 3 images */
+@media (min-width: 1025px) {
+  .person {
+    flex: 0 0 calc(100% / 3);
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .person {
+    width: calc(100% / 2);
+  }
+
+  .person {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .person img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .person h4,
+  .person p {
+    color: black;
+    line-height: 1.6;
+  }
+
+  .person h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0 5px;
+    padding-left: 70px;
+  }
+
+  .person p {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .person {
+    width: calc(100% / 2);
+  }
+
+  .person {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .person img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .person h4,
+  .person p {
+    color: black;
+    line-height: 1.6;
+  }
+
+  .person h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0 5px;
+    padding-left: 40px;
+  }
+
+  .person p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+/* 1 image */
+@media (max-width: 424px) {
+  
+  .person {
+    width: calc(100% / 1);
+  }
+
+  .person {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .person img {
+    width: 230px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .person h4,
+  .person p {
+    color: black;
+    line-height: 1.6;
+  }
+
+  .person h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0 5px;
+    padding-left: 60px;
+  }
+
+  .person p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+
+/* 1 image */
+@media (max-width: 375px) {
+  
+  .person {
+    width: calc(100% / 1);
+  }
+
+  .person {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .person img {
+    width: 230px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .person h4,
+  .person p {
+    color: black;
+    line-height: 1.6;
+  }
+
+  .person h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0 5px;
+    padding-left: 50px;
+  }
+
+  .person p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+/* 1 image */
+@media (max-width: 320px) {
+  
+  .person {
+    width: calc(100% / 1);
+  }
+
+  .person {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .person img {
+    width: 200px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .person h4,
+  .person p {
+    color: black;
+    line-height: 1.6;
+  }
+
+  .person h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0 5px;
+    padding-left: 40px;
+  }
+
+  .person p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+  }
+}
 
 @media (max-width:1440px) {
 
@@ -5840,113 +5998,6 @@ section.image-section5 {
   h1 {
     font-size: 40px;
     font-weight: bold;
-  }
-
-  .slider-container1,
-  .slider-container2 {
-    display: none;
-  }
-
-  .script1,
-  .script2 {
-    display: none;
-  }
-
-  .slider-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    margin-left: 50px;
-  }
-
-  .slider {
-    width: 1400px;
-    overflow: hidden;
-  }
-
-  .slides {
-    display: flex;
-    gap: 130px;
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .person {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .person1 {
-    padding-right: 160px;
-  }
-
-  .person1 h4,
-  .person1 p {
-    color: black;
-    line-height: 1.2;
-  }
-
-  .person1 h4 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 60px;
-  }
-
-  .person1 p {
-    font-size: 24px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 60px;
-  }
-
-  .person1 img {
-    width: 300px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person img {
-    width: 300px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .arrowleft {
-    font-size: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  .arrowright {
-    font-size: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-right: 60px;
-  }
-
-  .person h4,
-  .person p {
-    color: black;
-    line-height: 1.2;
-  }
-
-  .person h4 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-  }
-
-  .person p {
-    font-size: 24px;
-    font-weight: 400;
-    margin: 0;
   }
 
   .container58 {
@@ -9290,173 +9341,6 @@ section.image-section5 {
     font-weight: bold;
   }
 
-  .slider-container {
-    display: none;
-  }
-
-  .slider-container1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    margin-left: 30px;
-  }
-
-  div.slider1 {
-    width: 960px;
-    overflow: hidden;
-  }
-
-  .slides1 {
-    display: flex;
-    gap: 160px;
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .person {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .person2 {
-    padding-right: 450px;
-  }
-
-  .person2 h4,
-  .person2 p {
-    color: black;
-    line-height: 1.2;
-  }
-
-  .person2 h4 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 50px;
-  }
-
-  .person2 p {
-    font-size: 24px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 70px;
-  }
-
-  .person2 img {
-    width: 300px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person1 {
-    padding-right: 0;
-  }
-
-  .person1 h4,
-  .person1 p {
-    color: black;
-    line-height: 1.2;
-  }
-
-  .person1 h4 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 60px;
-  }
-
-  .script1 {
-    display: contents;
-  }
-
-  .person1 p {
-    font-size: 24px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 60px;
-  }
-
-  .person1 img {
-    width: 300px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person3 {
-    padding-right: 440px;
-  }
-
-  .person3 h4,
-  .person3 p {
-    color: black;
-    line-height: 1.2;
-  }
-
-  .person3 h4 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 60px;
-  }
-
-  .person3 p {
-    font-size: 24px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 60px;
-  }
-
-  .person3 img {
-    width: 300px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person img {
-    width: 300px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .arrowleft1 {
-    font-size: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  .arrowright1 {
-    font-size: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-right: 60px;
-  }
-
-  .person h4,
-  .person p {
-    color: black;
-    line-height: 1.2;
-  }
-
-  .person h4 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-  }
-
-  .person p {
-    font-size: 24px;
-    font-weight: 400;
-    margin: 0;
-  }
-
   .container58 {
     width: 100%;
     text-align: center;
@@ -12728,172 +12612,7 @@ section.image-section5 {
     font-weight: bold;
   }
 
-  .slider-container {
-    display: none;
-  }
 
-  .slider-container1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin-left: 50px;
-  }
-
-  div.slider1 {
-    width: 720px;
-    overflow: hidden;
-  }
-
-  .slides1 {
-    display: flex;
-    gap: 80px;
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .person {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .person2 {
-    padding-right: 700px;
-  }
-
-  .person2 h4,
-  .person2 p {
-    color: black;
-    line-height: 1.2;
-  }
-
-  .person2 h4 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 40px;
-  }
-
-  .person2 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 60px;
-  }
-
-  .person2 img {
-    width: 250px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person1 {
-    padding-right: 0;
-  }
-
-  .person1 h4,
-  .person1 p {
-    color: black;
-    line-height: 1.2;
-  }
-
-  .person1 h4 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 60px;
-  }
-
-  .script1 {
-    display: contents;
-  }
-
-  .person1 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 60px;
-  }
-
-  .person1 img {
-    width: 250px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person3 {
-    padding-right: 700px;
-  }
-
-  .person3 h4,
-  .person3 p {
-    color: black;
-    line-height: 1.2;
-  }
-
-  .person3 h4 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 50px;
-  }
-
-  .person3 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 50px;
-  }
-
-  .person3 img {
-    width: 250px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person img {
-    width: 250px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .arrowleft1 {
-    font-size: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  .arrowright1 {
-    font-size: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-right: 60px;
-  }
-
-  .person h4,
-  .person p {
-    color: black;
-    line-height: 1.2;
-  }
-
-  .person h4 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-  }
-
-  .person p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-  }
 
   .container58 {
     width: 100%;
@@ -16526,270 +16245,7 @@ section.image-section5 {
     font-weight: bold;
   }
 
-  .slider-container {
-    display: none;
-  }
 
-  .slider-container1 {
-    display: none;
-  }
-
-  .slider-container2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-    margin-left: 20px;
-  }
-
-  div.slider2 {
-    width: 380px;
-    overflow: hidden;
-  }
-
-  .slides2 {
-    display: flex;
-    gap: 80px;
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .person {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .person4 {
-    padding-right: 400px;
-  }
-
-  .person4 h4,
-  .person4 p {
-    color: black;
-    line-height: 1.4;
-  }
-
-  .person4 h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 20px;
-  }
-
-  .person4 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 50px;
-  }
-
-  .person4 img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person2 {
-    padding-right: 400px;
-  }
-
-  .person2 h4,
-  .person2 p {
-    color: black;
-    line-height: 1.4;
-  }
-
-  .person2 h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 20px;
-  }
-
-  .person2 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 35px;
-  }
-
-  .person2 img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person1 {
-    padding-right: 400px;
-  }
-
-  .person1 h4,
-  .person1 p {
-    color: black;
-    line-height: 1.4;
-  }
-
-  .person1 h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 30px;
-  }
-
-  .script1 {
-    display: contents;
-  }
-
-  .person1 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 30px;
-  }
-
-  .person1 img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person3 {
-    padding-right: 400px;
-  }
-
-  .person3 h4,
-  .person3 p {
-    color: black;
-    line-height: 1.4;
-  }
-
-  .person3 h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 20px;
-  }
-
-  .person3 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 18px;
-  }
-
-  .person3 img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person5 {
-    padding-right: 400px;
-  }
-
-  .person5 h4,
-  .person5 p {
-    color: black;
-    line-height: 1.4;
-  }
-
-  .person5 h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 20px;
-  }
-
-  .person5 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 30px;
-  }
-
-  .person5 img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-
-  .person6 {
-    padding-right: 0;
-  }
-
-  .person6 h4,
-  .person6 p {
-    color: black;
-    line-height: 1.4;
-  }
-
-  .person6 h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 3px;
-  }
-
-  .person6 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 35px;
-  }
-
-  .person6 img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .arrowleft2 {
-    font-size: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  .arrowright2 {
-    font-size: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-right: 20px;
-  }
-
-  .person h4,
-  .person p {
-    color: black;
-    line-height: 1.2;
-  }
-
-  .person h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-  }
-
-  .person p {
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0;
-  }
 
   .container58 {
     width: 100%;
@@ -20422,270 +19878,7 @@ section.image-section5 {
     font-weight: bold;
   }
 
-  .slider-container {
-    display: none;
-  }
 
-  .slider-container1 {
-    display: none;
-  }
-
-  .slider-container2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    margin-left: 20px;
-  }
-
-  div.slider2 {
-    width: 320px;
-    overflow: hidden;
-  }
-
-  .slides2 {
-    display: flex;
-    gap: 80px;
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .person {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .person4 {
-    padding-right: 400px;
-  }
-
-  .person4 h4,
-  .person4 p {
-    color: black;
-    line-height: 1.4;
-  }
-
-  .person4 h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 20px;
-  }
-
-  .person4 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 50px;
-  }
-
-  .person4 img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person2 {
-    padding-right: 400px;
-  }
-
-  .person2 h4,
-  .person2 p {
-    color: black;
-    line-height: 1.4;
-  }
-
-  .person2 h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 20px;
-  }
-
-  .person2 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 35px;
-  }
-
-  .person2 img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person1 {
-    padding-right: 400px;
-  }
-
-  .person1 h4,
-  .person1 p {
-    color: black;
-    line-height: 1.4;
-  }
-
-  .person1 h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 30px;
-  }
-
-  .script1 {
-    display: contents;
-  }
-
-  .person1 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 30px;
-  }
-
-  .person1 img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person3 {
-    padding-right: 400px;
-  }
-
-  .person3 h4,
-  .person3 p {
-    color: black;
-    line-height: 1.4;
-  }
-
-  .person3 h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 20px;
-  }
-
-  .person3 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 18px;
-  }
-
-  .person3 img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person5 {
-    padding-right: 400px;
-  }
-
-  .person5 h4,
-  .person5 p {
-    color: black;
-    line-height: 1.4;
-  }
-
-  .person5 h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 20px;
-  }
-
-  .person5 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 30px;
-  }
-
-  .person5 img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-
-  .person6 {
-    padding-right: 0;
-  }
-
-  .person6 h4,
-  .person6 p {
-    color: black;
-    line-height: 1.4;
-  }
-
-  .person6 h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 3px;
-  }
-
-  .person6 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 35px;
-  }
-
-  .person6 img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .arrowleft2 {
-    font-size: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  .arrowright2 {
-    font-size: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-right: 20px;
-  }
-
-  .person h4,
-  .person p {
-    color: black;
-    line-height: 1.2;
-  }
-
-  .person h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-  }
-
-  .person p {
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0;
-  }
 
   .container58 {
     width: 100%;
@@ -21490,7 +20683,7 @@ section.image-section5 {
     height: 220px;
     margin-left: 30px;
   }
-  
+
   .container90 {
     display: flex;
     justify-content: center;
@@ -21633,8 +20826,6 @@ section.image-section5 {
 }
 
 
-
-
 @media (max-width:320px) {
 
   body {
@@ -21650,6 +20841,10 @@ section.image-section5 {
 
   .menu {
     gap: 10px;
+  }
+
+  .navbar {
+    display: none;
   }
 
   .navbar {
@@ -24305,270 +23500,7 @@ section.image-section5 {
     font-weight: bold;
   }
 
-  .slider-container {
-    display: none;
-  }
 
-  .slider-container1 {
-    display: none;
-  }
-
-  .slider-container2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 22px;
-    margin-left: 20px;
-  }
-
-  div.slider2 {
-    width: 380px;
-    overflow: hidden;
-  }
-
-  .slides2 {
-    display: flex;
-    gap: 80px;
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .person {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .person4 {
-    padding-right: 400px;
-  }
-
-  .person4 h4,
-  .person4 p {
-    color: black;
-    line-height: 1.4;
-  }
-
-  .person4 h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 20px;
-  }
-
-  .person4 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 50px;
-  }
-
-  .person4 img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person2 {
-    padding-right: 400px;
-  }
-
-  .person2 h4,
-  .person2 p {
-    color: black;
-    line-height: 1.4;
-  }
-
-  .person2 h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 20px;
-  }
-
-  .person2 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 35px;
-  }
-
-  .person2 img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person1 {
-    padding-right: 400px;
-  }
-
-  .person1 h4,
-  .person1 p {
-    color: black;
-    line-height: 1.4;
-  }
-
-  .person1 h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 30px;
-  }
-
-  .script1 {
-    display: contents;
-  }
-
-  .person1 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 30px;
-  }
-
-  .person1 img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person3 {
-    padding-right: 400px;
-  }
-
-  .person3 h4,
-  .person3 p {
-    color: black;
-    line-height: 1.4;
-  }
-
-  .person3 h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 20px;
-  }
-
-  .person3 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 18px;
-  }
-
-  .person3 img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person5 {
-    padding-right: 400px;
-  }
-
-  .person5 h4,
-  .person5 p {
-    color: black;
-    line-height: 1.4;
-  }
-
-  .person5 h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 20px;
-  }
-
-  .person5 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 30px;
-  }
-
-  .person5 img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-
-  .person6 {
-    padding-right: 0;
-  }
-
-  .person6 h4,
-  .person6 p {
-    color: black;
-    line-height: 1.4;
-  }
-
-  .person6 h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    margin-left: 3px;
-  }
-
-  .person6 p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 35px;
-  }
-
-  .person6 img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .person img {
-    width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  .arrowleft2 {
-    font-size: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  .arrowright2 {
-    font-size: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-right: 20px;
-  }
-
-  .person h4,
-  .person p {
-    color: black;
-    line-height: 1.2;
-  }
-
-  .person h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 5px;
-  }
-
-  .person p {
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0;
-  }
 
   .container58 {
     width: 100%;
@@ -25238,7 +24170,7 @@ section.image-section5 {
     color: black;
     width: 300px;
   }
-  
+
   .text-overlay80 h1 {
     font-size: 20px;
     font-weight: 700;
