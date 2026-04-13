@@ -4008,7 +4008,7 @@ section.image-section5 {
 }
 
 .slider {
-  width: 80%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -4043,7 +4043,7 @@ section.image-section5 {
   font-size: 24px;
   font-weight: bold;
   margin: 15px 0 5px;
-  padding-left: 70px;
+  padding-left: 120px;
 }
 
 .person p {
