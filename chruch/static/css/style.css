@@ -4094,7 +4094,7 @@ section.image-section5 {
     font-size: 24px;
     font-weight: bold;
     margin: 15px 0 5px;
-    padding-left: 70px;
+    padding-left: 140px;
   }
 
   .person p {
@@ -4102,6 +4102,20 @@ section.image-section5 {
     font-weight: 400;
     margin: 0;
   }
+  
+.slider-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
 }
 
 @media (max-width: 768px) {
@@ -4136,7 +4150,7 @@ section.image-section5 {
     font-size: 20px;
     font-weight: bold;
     margin: 15px 0 5px;
-    padding-left: 40px;
+    padding-left: 90px;
   }
 
   .person p {
@@ -4179,7 +4193,7 @@ section.image-section5 {
     font-size: 20px;
     font-weight: bold;
     margin: 15px 0 5px;
-    padding-left: 60px;
+    padding-left: 100px;
   }
 
   .person p {
@@ -4191,7 +4205,7 @@ section.image-section5 {
 
 
 /* 1 image */
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   
   .person {
     width: calc(100% / 1);
@@ -4223,7 +4237,7 @@ section.image-section5 {
     font-size: 20px;
     font-weight: bold;
     margin: 15px 0 5px;
-    padding-left: 50px;
+    padding-left: 70px;
   }
 
   .person p {
@@ -4266,7 +4280,7 @@ section.image-section5 {
     font-size: 18px;
     font-weight: bold;
     margin: 15px 0 5px;
-    padding-left: 40px;
+    padding-left: 55px;
   }
 
   .person p {
